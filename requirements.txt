@@ -1,0 +1,18 @@
+# Core ML
+torch>=2.2          # install the CUDA build matching your GPU/driver from
+                     # https://pytorch.org/get-started/locally/ rather than
+                     # installing this line as-is via plain pip, or you'll
+                     # get a CPU-only wheel
+transformers>=4.40   # CLIP model/processor (CLIPModel, CLIPProcessor)
+tensorflow>=2.15     # reading the .tfrecords dataset (tf.data, TFRecordDataset)
+
+# Data / metrics / utils
+numpy
+scikit-learn         # adjusted_rand_score (FG-ARI)
+tqdm                 # training progress bar
+Pillow               # PIL.Image (clevr_vocab.py)
+python-dotenv        # load_dotenv (clevr_vocab.py)
+requests             # OpenRouter API calls (clevr_vocab.py)
+
+# Visualization
+matplotlib
